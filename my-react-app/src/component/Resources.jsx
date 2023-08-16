@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Resources() {
     return (
+        <section id="resources">
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSeBzPh8m_Skw6RWflpE_NsViL58Xw8fUTehVXJjp1hF1GXDBw/viewform?embedded=true"
             width="640"
@@ -11,5 +12,6 @@ export default function Resources() {
             marginWidth="0">
             Loading…
         </iframe>
+        </section>
     )
 }

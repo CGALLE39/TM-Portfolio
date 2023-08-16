@@ -5,6 +5,7 @@ import React from "react";
 import Skills from "./component/Skills";
 import Navbar from "./component/Navbar";
 import Contact from "./component/Contact";
+import Resources from "./component/Resources";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
             <About />
             <Skills />
             <Contact />
+            <Resources />
         </main>
     );
 }
