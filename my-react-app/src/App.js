@@ -7,7 +7,6 @@ import Navbar from "./component/Navbar";
 import Contact from "./component/Contact";
 import Resources from "./component/Resources";
 
-
 export default function App() {
     return (
         <main className="text-gray-400 bg-gray-900 body-font">
