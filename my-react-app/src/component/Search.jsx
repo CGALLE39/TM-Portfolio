@@ -19,7 +19,7 @@ function Search() {
 
     return (
         <div className="App">
-            <h1>API Data in React</h1>
+            <h1>API Data</h1>
             <ul>
                 {data.map(item => (
                     <li key={item.id}>{item.name}</li>
