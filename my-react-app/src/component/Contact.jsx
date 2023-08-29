@@ -6,18 +6,6 @@ import {useEffect, useRef, useState} from "react";
 export default function Contact() {
     const form = useRef();
 
-    // const [name, setName] = React.useState("");
-    // const [email, setEmail] = React.useState("");
-    // const [message, setMessage] = React.useState("");
-    //
-    // function encode(data) {
-    //     return Object.keys(data)
-    //         .map(
-    //             (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-    //         )
-    //         .join("&");
-    // }
-
     const sendEmail = (e) => {
         e.preventDefault()
 
@@ -80,7 +68,7 @@ export default function Contact() {
                         Contact Me
                     </h2>
                     <p className="leading-relaxed mb-5">
-                        this is some text
+                        Reach out for additional questions or inquiries.
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">

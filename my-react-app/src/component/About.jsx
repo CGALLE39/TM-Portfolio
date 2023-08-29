@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from "react";
+import Jack from './Images/JackAttourney.png'
 export default function About() {
     return (
         <section id="about">
@@ -29,7 +29,7 @@ export default function About() {
                     <img
                         className="object-cover object-center rounded"
                         alt="jack"
-                        src='./assets/images/JackAttourney.png'
+                        src={Jack}
                     />
                 </div>
             </div>
