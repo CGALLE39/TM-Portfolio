@@ -75,9 +75,9 @@ export default function Contact() {
                             Name
                         </label>
                         <input
-                            type="email"
-                            name="user_email"
-                            placeholder="Email"
+                            type="name"
+                            name="name"
+                            placeholder="Name"
                             required
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             />
@@ -89,6 +89,7 @@ export default function Contact() {
                         <input
                             type="email"
                             id="email"
+                            placeholder="Email"
                             name="email"
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             required
