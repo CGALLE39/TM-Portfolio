@@ -6,10 +6,10 @@ export default function Skills() {
             <p className="">Education</p>
             <br />
             <p className="">University of Wisconsin Law School</p>
-            <p>Doctor of Law - JD, Law</p>
+            <p>Doctor of Law - JD, Law, Magna Cum Laude (2021)</p>
             <br />
             <p className="">Jilin University</p>
-            <p>Bachelor's degree, Social Sciences</p>
+            <p>Bachelor's degree, Social Sciences (2016)</p>
             <br />
             <p className="">License</p>
             <br />
