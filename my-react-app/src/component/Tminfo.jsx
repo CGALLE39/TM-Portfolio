@@ -8,6 +8,9 @@ export default function Tminfo() {
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                     Trademark Registration
                     </h1>
+                    <p className="mb-8 leading-relaxed ">
+                        Simply answer some questions about your trademark and your business, and an attorney will get in touch about next steps.
+                    </p>
                     <div className="flex justify-center mt-8">
                         <a
                             href="#resources"
