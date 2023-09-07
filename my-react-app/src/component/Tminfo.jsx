@@ -9,7 +9,7 @@ export default function Tminfo() {
                     Trademark Registration
                     </h1>
                     <p className="mb-8 leading-relaxed ">
-                        Simply answer some questions about your trademark and your business, and an attorney will get in touch about next steps.
+                        A trademark means that a business name, brand name, tagline, logo, symbol, or design is registered with the USPTO, and that its use by others is restricted. Registering a trademark is a legal process of providing protection against competitors who want to copy your branding.
                     </p>
                     <div className="flex justify-center mt-8">
                         <a
