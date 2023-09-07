@@ -1,4 +1,5 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 export default function Navbar() {
@@ -9,6 +10,8 @@ export default function Navbar() {
                     <a href="#about" className="ml-3 text-xl">
                         SCIMIRAI LLC
                     </a>
+                    <FontAwesomeIcon icon="fa-sharp fa-regular fa-trademark " />
+
                 </a>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                     <a href="#skills" className="mr-5 hover:text-white">

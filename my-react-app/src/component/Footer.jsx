@@ -1,4 +1,6 @@
 import { Typography } from "@material-tailwind/react";
+import React from "react";
+
 
 const SITEMAP = [
     {
@@ -21,7 +23,7 @@ const SITEMAP = [
 
 const currentYear = new Date().getFullYear();
 
-export function FooterWithSitemap() {
+export function Footer() {
     return (
         <footer className="relative w-full">
             <div className="mx-auto w-full max-w-7xl px-8">
@@ -55,7 +57,7 @@ export function FooterWithSitemap() {
                         variant="small"
                         className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
                     >
-                        &copy; {currentYear} <a href="https://material-tailwind.com/">Material Tailwind</a>. All
+                        &copy; {currentYear} <a href="https://material-tailwind.com/">SCIMIRAI LLC</a>. All
                         Rights Reserved.
                     </Typography>
                     <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

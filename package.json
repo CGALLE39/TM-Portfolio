@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "firebase": "^10.3.0",
     "react-google-forms-hooks": "^1.2.4"
   }
