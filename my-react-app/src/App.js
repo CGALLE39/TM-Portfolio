@@ -12,21 +12,23 @@ import {Footer} from "./component/Footer";
 import {Switch} from "@material-tailwind/react";
 import {Route, Router, Routes} from "react-router-dom";
 import Register from "./component/Register";
+import Home from "./component/Home";
 
 export default function App() {
     return (
         <main className="text-gray-400 bg-gray-900 body-font">
             <Navbar />
-            <Tminfo />
+            {/*<Tminfo />*/}
+            {/*<About />*/}
+            {/*<Skills />*/}
+            {/*<Contact />*/}
+            {/*<Resources />*/}
             <Routes>
-                {/*<Route exact path='/' element={< Home />}></Route>*/}
+                <Route exact path='/' element={<
+                    Home />}></Route>
                 <Route exact path='/register' element={< Register />}></Route>
                 {/*<Route exact path='/contact' element={< Contact />}></Route>*/}
             </Routes>
-            <About />
-            <Skills />
-            <Contact />
-            <Resources />
             <Footer />
         </main>
     );
