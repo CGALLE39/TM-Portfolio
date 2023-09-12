@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useState } from 'react';
+import axios from 'axios';
+export default function Resources()  {
+    const [query, setQuery] = useState('');
+    const [results, setResults] = useState([]);
 
-export default function Resources() {
+    const handleSearch = async () => {
+        try {
+            const response = await axios.get(`https://bulkdata.uspto.gov/BDSS-API-SWAGGER/search${query}`);
+            setResults(response.data.results); // Adjust the API URL and data structure accordingly
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
     return (
         <div>
-            <p1> hehe </p1>
+            <input
+                type="text"
+                placeholder="Search..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+            />
+            <button onClick={handleSearch}>Search</button>
+
+            <ul>
+                {results.map((result) => (
+                    <li key={result.id}>{result.name}</li>
+                ))}
+            </ul>
         </div>
-    // <section >
-    //     <h1 className="title-font text-center mt-8 sm:text-1xl text-3xl mb-4 font-medium text-white">
-    //         Simply answer some questions in the form below about your trademark and your business, and an attorney will get in touch about next steps.
-    //         Once the attorney confirms with you that everything is ready to go, they'll e-file with the USPTO.
-    //     </h1>
-    //     <div id="resources" className="flex justify-center mt-8">
-    //     <iframe
-    //         src="https://docs.google.com/forms/d/e/1FAIpQLSeBzPh8m_Skw6RWflpE_NsViL58Xw8fUTehVXJjp1hF1GXDBw/viewform?embedded=true"
-    //         width="640"
-    //         height="382"
-    //         frameBorder="0"
-    //         marginHeight="0"
-    //         marginWidth="0">
-    //         Loading…
-    //     </iframe>
-    //     </div>
-    // </section>
-)
+    );
 }
+
+
+
+
+
 

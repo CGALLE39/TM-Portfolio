@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills() {
     return (
-        <section id="skills" className="text-center">
+        <div id="skills" className="text-center">
             <p className="title-font text-4xl">Education</p>
             <br />
             <p className="">University of Wisconsin Law School</p>
@@ -16,6 +16,6 @@ export default function Skills() {
             <p>Attorney</p>
             <p>Supreme Court of Wisconsin (2021)</p>
 
-        </section>
+        </div>
     )
 }

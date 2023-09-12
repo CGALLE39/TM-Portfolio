@@ -9,8 +9,8 @@ import Resources from "./component/Resources";
 import Tminfo from "./component/Tminfo";
 import {Footer} from "./component/Footer";
 // import {Routes} from "./Route";
-import {Switch} from "@material-tailwind/react";
-import {Route, Router, Routes} from "react-router-dom";
+// import {Switch} from "@material-tailwind/react";
+import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
 import Register from "./component/Register";
 import Home from "./component/Home";
 
@@ -24,11 +24,18 @@ export default function App() {
             {/*<Contact />*/}
             {/*<Resources />*/}
             <Routes>
-                <Route exact path='/' element={<
-                    Home />}></Route>
-                <Route exact path='/register' element={< Register />}></Route>
+
+                {/*< Route path='/' element={<Home />}/>*/}
+                < Route path='/' element={< Tminfo />}/>
+                < Route path='/about' element={< About />}/>
+                < Route path='/skills' element={< Skills />}/>
+                < Route path='/contact' element={< Contact />}/>
+                < Route path='/resources' element={< Resources />}/>
+
+                < Route path='/register' element={< Register />}/>
                 {/*<Route exact path='/contact' element={< Contact />}></Route>*/}
             </Routes>
+
             <Footer />
         </main>
     );

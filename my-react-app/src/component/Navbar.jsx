@@ -1,5 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 
 export default function Navbar() {
@@ -14,17 +15,21 @@ export default function Navbar() {
 
                 </a>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-                    <a href="#skills" className="mr-5 hover:text-white">
-                        Skills
+                    <a className="mr-5 hover:text-white">
+                    <Link to="/">Home</Link>
                     </a>
-                    <a href="#about" className="mr-5 hover:text-white">
-                        About
+                    <a className="mr-5 hover:text-white">
+                    <Link to="/skills">Skills</Link>
                     </a>
-                    <a href="#contact" className="mr-5 hover:text-white">
-                        Contact Me
+                    <a className="mr-5 hover:text-white">
+                        <Link to="/about">About</Link>
+
                     </a>
-                    <a href="#resources" className="mr-5 hover:text-white">
-                        Resources
+                    <a className="mr-5 hover:text-white">
+                        <Link to="/contact">Contact</Link>
+                    </a>
+                    <a className="mr-5 hover:text-white">
+                        <Link to="/resources">Resources</Link>
                     </a>
                 </nav>
             </div>
