@@ -1,30 +1,32 @@
 import React, { useState } from 'react';
+// src/components/TrademarkSearch.js
 import axios from 'axios';
-export default function Resources()  {
-    const [query, setQuery] = useState('');
-    const [results, setResults] = useState([]);
+
+function TrademarkSearch() {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`https://bulkdata.uspto.gov/BDSS-API-SWAGGER/search${query}`);
-            setResults(response.data.results); // Adjust the API URL and data structure accordingly
+            const response = await axios.get(`https://www.tmdn.org/tmview/v2/search?term=${searchTerm}`);
+            setSearchResults(response.data.response || []);
         } catch (error) {
-            console.error('Error fetching data:', error);
+            console.error('Error fetching trademark data:', error);
         }
     };
 
     return (
         <div>
+            <h1>Trademark Search</h1>
             <input
                 type="text"
-                placeholder="Search..."
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Enter a trademark name"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button onClick={handleSearch}>Search</button>
-
             <ul>
-                {results.map((result) => (
+                {searchResults.map((result) => (
                     <li key={result.id}>{result.name}</li>
                 ))}
             </ul>
@@ -32,8 +34,4 @@ export default function Resources()  {
     );
 }
 
-
-
-
-
-
+export default TrademarkSearch;
