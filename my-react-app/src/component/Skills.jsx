@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills() {
     return (
-        <div id="skills" className="text-center">
+        <div id="skills" className="text-center h-screen">
             <p className="title-font text-4xl mt-8">Education</p>
             <br />
             <p className="">University of Wisconsin Law School</p>

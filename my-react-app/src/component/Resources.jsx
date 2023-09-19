@@ -16,7 +16,7 @@ function TrademarkSearch() {
     };
 
     return (
-        <div>
+        <div className= "h-screen">
             <h1>Trademark Search</h1>
             <input
                 type="text"
