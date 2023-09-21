@@ -1,4 +1,6 @@
 import React from "react";
+import MyForm from './RegisterForm';
+
 export default function Register() {
     return (
         <div>
@@ -7,15 +9,16 @@ export default function Register() {
                 Once the attorney confirms with you that everything is ready to go, they'll e-file with the USPTO.
             </h1>
             <div id="resources" className="flex justify-center mt-8">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeBzPh8m_Skw6RWflpE_NsViL58Xw8fUTehVXJjp1hF1GXDBw/viewform?embedded=true"
-                    width="640"
-                    height="382"
-                    frameBorder="0"
-                    marginHeight="0"
-                    marginWidth="0">
-                    Loading…
-                </iframe>
+                <MyForm />
+                {/*<iframe*/}
+                {/*    src="https://docs.google.com/forms/d/e/1FAIpQLSeBzPh8m_Skw6RWflpE_NsViL58Xw8fUTehVXJjp1hF1GXDBw/viewform?embedded=true"*/}
+                {/*    width="640"*/}
+                {/*    height="382"*/}
+                {/*    frameBorder="0"*/}
+                {/*    marginHeight="0"*/}
+                {/*    marginWidth="0">*/}
+                {/*    Loading…*/}
+                {/*</iframe>*/}
             </div>
         </div>
     )
